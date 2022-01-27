@@ -2,12 +2,12 @@
 Node-red + ifm multicode reader (O2I500) + .txt file
 
 Objetivo:
-Armazenamento local (.txt) dos dados de leitura do rótulo traseiro do listerine, utilizando o leitor de multicódigos ifm O2I500.
+Armazenamento local (.txt) dos dados de leitura do rótulo traseiro do listerine, utilizando o leitor de códigos ifm O2I500.
 
 - Comunicação TCP/IP
   - Trigger via comando de rede
   - leitura de 2 códigos simultâneos EAN-13/Data Matrix
-  - envio para nodered TCP/IP
+  - envio para node-red TCP/IP
   - escrita em arquivo .txt armazenamento local 
   - conteúdo (;Result:1;Code:556423;Code:7891010973902;time:319;)
  
