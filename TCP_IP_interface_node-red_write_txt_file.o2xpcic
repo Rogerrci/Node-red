@@ -1,0 +1,81 @@
+{
+    "elements": [
+        {
+            "id": "delimiter",
+            "type": "string",
+            "value": ";"
+        },
+        {
+            "id": "custom_string",
+            "type": "string",
+            "value": "Result:"
+        },
+        {
+            "id": "ApplicationDecodingResult",
+            "type": "uint8"
+        },
+        {
+            "id": "delimiter",
+            "type": "string",
+            "value": ";"
+        },
+        {
+            "elements": [
+                {
+                    "elements": [
+                        {
+                            "elements": [
+                                {
+                                    "id": "custom_string",
+                                    "type": "string",
+                                    "value": "Code:"
+                                },
+                                {
+                                    "format": {
+                                        "alignment": "left",
+                                        "fill": "\u0000"
+                                    },
+                                    "id": "content",
+                                    "type": "blob"
+                                },
+                                {
+                                    "id": "delimiter",
+                                    "type": "string",
+                                    "value": ";"
+                                }
+                            ],
+                            "id": "codes",
+                            "type": "records"
+                        }
+                    ],
+                    "id": "GroupResults",
+                    "type": "records"
+                }
+            ],
+            "id": "Models",
+            "type": "records"
+        },
+        {
+            "id": "custom_string",
+            "type": "string",
+            "value": "time:"
+        },
+        {
+            "id": "ApplicationDecodingTimeMs",
+            "type": "uint32"
+        },
+        {
+            "id": "delimiter",
+            "type": "string",
+            "value": ";"
+        }
+    ],
+    "format": {
+        "dataencoding": "ascii",
+        "decimalseparator": ",",
+        "numericfill": false,
+        "precision": 0,
+        "width": 0
+    },
+    "layouter": "flexible"
+}
